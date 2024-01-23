@@ -1,8 +1,11 @@
+using InBazarAPI.Extention;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddDbConTextes(builder.Configuration);
 
 var app = builder.Build();
 
