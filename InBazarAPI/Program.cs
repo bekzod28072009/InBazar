@@ -6,8 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 //----------------------------------------------------
+
 builder.Services.AddDbConTextes(builder.Configuration);
 builder.Services.AddRepository();
+
 //---------------------------------------------------
 
 var app = builder.Build();
