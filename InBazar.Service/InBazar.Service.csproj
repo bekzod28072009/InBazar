@@ -14,4 +14,8 @@
     <ProjectReference Include="..\InBazar.Domain\InBazar.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Service\" />
+  </ItemGroup>
+
 </Project>
