@@ -9,6 +9,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddDbConTextes(builder.Configuration);
 builder.Services.AddRepository();
+builder.Services.AddService();
 
 //---------------------------------------------------
 
