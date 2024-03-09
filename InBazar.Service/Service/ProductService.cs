@@ -57,7 +57,7 @@ namespace InBazar.Service.Service
             var product = mapper.Map<Product>(entity);
             product.Id = id;
             var newProduct = repository.Update(product);
-            return mapper.Map<ProductDto>(newFood);
+            return mapper.Map<ProductDto>(newProduct);
 
         }
     }
