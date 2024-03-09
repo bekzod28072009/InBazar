@@ -20,5 +20,10 @@ namespace InBazarAPI.Extention
             services.AddTransient<IGenericRepository<User>, GenericRepository<User>>();
             services.AddTransient<IGenericRepository<Product>, GenericRepository<Product>>();
         }
+
+        public static void AddService(this IServiceCollection services)
+        {
+
+        }
     }
 }
