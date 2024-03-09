@@ -3,6 +3,8 @@ using InBazar.DataAcces.IRepository;
 using InBazar.DataAcces.Repository;
 using InBazar.Domain.Entity.Products;
 using InBazar.Domain.Entity.Users;
+using InBazar.Service.IService;
+using InBazar.Service.Service;
 using Microsoft.EntityFrameworkCore;
 
 namespace InBazarAPI.Extention
@@ -23,7 +25,7 @@ namespace InBazarAPI.Extention
 
         public static void AddService(this IServiceCollection services)
         {
-
+            services.AddTransient<IProductService, ProductService>();
         }
     }
 }
