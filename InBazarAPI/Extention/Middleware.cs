@@ -26,6 +26,7 @@ namespace InBazarAPI.Extention
         public static void AddService(this IServiceCollection services)
         {
             services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IUserService, UserService>();
         }
     }
 }
