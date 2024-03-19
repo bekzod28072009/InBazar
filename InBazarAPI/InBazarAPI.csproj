@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\UsersController\" />
-    <Folder Include="Controllers\ProductsController\" />
   </ItemGroup>
 
   <ItemGroup>
