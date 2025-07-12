@@ -15,7 +15,7 @@ namespace InBazar.Service.IService
         IQueryable<User> GetAll(Expression<Func<User, bool>> expression, string[] includes = null);
         ValueTask<UserDto> GetAsync(Expression<Func<User, bool>> expression, string[] includes = null);
         ValueTask<UserDto> CreateAsync(UserDto entity);
-        ValueTask<bool> DeleteAsync(Expression<Func<User, bool>> expression);
+        ValueTask<bool> DeleteAsync(Expression<Func<User, bool>> expression); 
         UserDto Update(int id, UserDto entity);
     }
 }
